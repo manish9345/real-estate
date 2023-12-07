@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> 
+
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+        <a href="index.html"><img src="images/logo.png" alt=""></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark"  onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT US</a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-bars"  onclick="showMenu()"></i>
+        </nav>
+        
+        <div class="text-box">
+            <h1>WELCOME TO STYLE LOFT</h1>
+            <p>Lorem ipsum dolor sit amet consectetur <br>adipisicing elit. Iure incidunt omn 
+                is ipsam officia voluptates? Totam in corrupti <br>ab similique, praesentium repellat 
+                iusto temporibus at quas. Quaerat quia dolore possimus quidem.
+            </p>
+                <a href="" class="hero-btn">There is more About Us!</a>
+        </div>
+    </header>
+    <!-- course -->
+    <section class="cloths">
+            <h1>WELCOME TO THIS SECTION</h1>
+            <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                Dolorem reprehenderit deleniti facilis maxime nobis nisi 
+                id nesciunt reiciendis quam accusamus. Cum, ad aliquam. 
+                Non ullam, architecto perferendis eos laboriosam rem.</P>
+
+                <div class="row">
+                    <div class="cloths-col">
+                        <h3>Chiffon</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Ipsum accusantium voluptate minus unde, dicta soluta 
+                             totam, voluptatem eum commodi nam repellendus sunt illo 
+                             obcaecati enim, non rerum et perferendis neque.</p>
+                    </div>
+                    <div class="cloths-col">
+                        <h3>Velvet</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Ipsum accusantium voluptate minus unde, dicta soluta 
+                             totam, voluptatem eum commodi nam repellendus sunt illo 
+                             obcaecati enim, non rerum et perferendis neque.</p>
+                    </div>
+                    <div class="cloths-col">
+                        <h3>Linen</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Ipsum accusantium voluptate minus unde, dicta soluta 
+                             totam, voluptatem eum commodi nam repellendus sunt illo 
+                             obcaecati enim, non rerum et perferendis neque.</p>
+                    </div>
+                </div>
+            
+                
+            </section>
+    <!-- campus -->
+    <section class="campus">
+        <h1>Enjoy Our Globel Services!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ipsum accusantium voluptate minus unde, dicta soluta 
+            totam, voluptatem eum commodi nam repellendus sunt illo 
+            obcaecati enim, non rerum et perferendis neque.</p>
+
+            <div class="row">
+                <div class="campus-col">
+                    <img src="images/london.png" alt="">
+                    <div class="layer">
+                        <h3>LONDON</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/newyork.png" alt="">
+                    <div class="layer">
+                        <h3>NEW YORK</h3>
+                    </div>
+                </div>
+                <div class="campus-col">
+                    <img src="images/washington.png" alt="">
+                    <div class="layer">
+                        <h3>WASHINGTON</h3>
+                    </div>
+                </div>
+                
+            </div>
+    </section>
+
+
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col">
+                        <h4>company</h4>
+                        <ul>
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">our services</a></li>
+                            <li><a href="#">privacy policy</a></li>
+                            <li><a href="#">affiliate program</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>get help</h4>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">shipping</a></li>
+                            <li><a href="#">returns</a></li>
+                            <li><a href="#">order status</a></li>
+                            <li><a href="#">payment options</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>online shop</h4>
+                        <ul>
+                            <li><a href="#">watch</a></li>
+                            <li><a href="#">bag</a></li>
+                            <li><a href="#">shoes</a></li>
+                            <li><a href="#">dress</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4>follow us</h4>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!-- java for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
